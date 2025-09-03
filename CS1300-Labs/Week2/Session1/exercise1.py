@@ -30,3 +30,7 @@ print("Next year I'll be:", age + 1)
 print("If I improve:", gpa + 0.1)
 print("Name repeated:", name * 3)
 # print("Age + Name:", age + name)  # This will cause a TypeError
+
+#1. What happens when you add an integer to a float? - It results in a float.
+#2. Can you multiply a string by a number? What does it do? - Yes, it repeats the string that many times.
+#3. What error do you get if you try to add a string and an integer? - TypeError: can only concatenate str (not "int") to str

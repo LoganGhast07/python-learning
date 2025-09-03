@@ -50,3 +50,7 @@ print("True as integer:", bool_as_int)
 mystery6_as_bool = bool(mystery6)
 print("Mystery6 as boolean:", mystery6_as_bool, "Type:", type(mystery6_as_bool))
 
+#1. What type does Python choose when adding int + float? - It results in a float.
+#2. What happens when you use + with two strings? - It concatenates them.
+#3. What integer value does True convert to? - It converts to 1.
+#4. Is the string "True" the same as the boolean True? - No, "True" is a non-empty string which converts to True, but they are different types.

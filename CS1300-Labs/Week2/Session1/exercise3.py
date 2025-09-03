@@ -40,11 +40,12 @@ print(f"{a} ** {b} = {exp_result}")
 print("-" * 30)
 # TODO: Mixed type operations
 print("Mixed Type Operations:")
-# What happens with int + float?
+# What happens with int + float? 
+# It results in a float.
 mixed1 = a + c
 #Observations to Note:
-#• What's the difference between / and // ?
-#• What type does regular division ( / ) always return?
-#• How does Python handle very large numbers?
-#• What happens with negative integer division
+#• What's the difference between / and // ? The / operator performs regular division and returns a float, while // performs integer (floor) division and returns an integer if both operands are integers.
+#• What type does regular division ( / ) always return? It always returns a float.
+#• How does Python handle very large numbers? Using arbitrary-precision arithmetic
+#• What happens with negative integer division? It rounds down to the nearest integer.
 
