@@ -447,3 +447,6 @@ bits = bytes_total
 # Multiply by 8 using compound operator
 bits *= 8
 print(f"In Bits: {bits:.0f} bits")
+print("=" * 40)
+
+
