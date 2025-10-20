@@ -7,9 +7,6 @@ Description: Introduction to Lists
 
 
 
-
-
-
 #Problem 1.1
 # Example shown for you:
 # Create a list of three colors
