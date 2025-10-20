@@ -1,4 +1,15 @@
-"""Homework 6"""""
+"""
+CS 1300 - Homework #6
+Name: Logan Ghast  
+Date: 10/20/2025
+Description: Introduction to Lists
+"""
+
+
+
+
+
+
 #Problem 1.1
 # Example shown for you:
 # Create a list of three colors
@@ -375,3 +386,88 @@ if -999 in readings:
 while -999 in readings:
     readings.remove(-999)
 print("Clean readings:", readings)
+print("="*40)
+
+
+#Problem 6.1
+# Check if items are in a list
+valid_grades = ['A', 'B', 'C', 'D', 'F']
+print("Valid grades:", valid_grades)
+# 1. Check if 'B' is a valid grade
+print("Is 'B' a valid grade?", 'B' in valid_grades)
+# 2. Check if 'E' is NOT a valid grade
+print("Is 'E' a valid grade?", 'E' in valid_grades)
+# 3. Ask user for a grade and check if it's valid
+user_grade = 'C' # Pretend user entered this
+# Check if user_grade is in valid_grades
+print(f"Is '{user_grade}' a valid grade?", user_grade in valid_grades)
+# Working with a menu:
+menu_options = [1, 2, 3, 4, 5]
+print("\nMenu options:", menu_options)
+# 4. Check if option 3 is available
+print("Option 3 is available:", 3 in menu_options)
+# 5. Check if option 9 is NOT available
+print("Option 9 is NOT available:", 9 not in menu_options)
+# Student roster:
+enrolled = ["Alice", "Bob", "Charlie", "Diana"]
+print("\nEnrolled students:", enrolled)
+# 6. Check if "Eve" needs to be added (not in list)
+if "Eve" not in enrolled:
+    print("Eve needs to be added.")
+# 7. Only add "Frank" if not already enrolled
+if "Frank" not in enrolled:
+    enrolled.append("Frank")
+    print("Frank has been added.")
+# 8. Create a list of students to check
+to_check = ["Alice", "Eve", "Bob", "George"]
+# For each student, print whether they're enrolled or not
+# (Do this without loops - check each one individually)
+print("Alice is enrolled:", "Alice" in enrolled)
+print("Eve is enrolled:", "Eve" in enrolled)
+print("Bob is enrolled:", "Bob" in enrolled)
+print("George is enrolled:", "George" in enrolled)
+print("="*40)
+
+
+#Problem 6.2
+# len() tells us how many items are in a list
+tasks = ["homework", "dishes", "laundry", "shopping", "exercise"]
+print("Tasks:", tasks)
+# 1. How many tasks are there?
+print("Number of tasks:", len(tasks))
+# 2. What's the index of the last task? (remember: len() - 1)
+print("Index of last task:", len(tasks) - 1)
+# 3. Check if list has more than 3 tasks
+print("Has more than 3 tasks:", len(tasks) > 3)
+# 4. Calculate the middle index
+middle_index = len(tasks) // 2
+print("Middle index:", middle_index)
+# 5. Access the middle task safely
+if tasks:
+    print("Middle task:", tasks[middle_index])
+# Empty list checks:
+inbox = []
+print("\nInbox:", inbox)
+# 6. Check if inbox is empty (two ways)
+# Way 1: Check if len() == 0
+if len(inbox) == 0:
+    print("Inbox is empty (using len() == 0)")
+# Way 2: Empty lists are "falsy"
+if not inbox:
+    print("Inbox is empty (using 'not inbox')")
+# 7. Create a waiting list with max capacity of 4
+waiting = ["P1", "P2"]
+max_capacity = 4
+print(f"\nWaiting list ({len(waiting)}/{max_capacity}):", waiting)
+# How many more can join?
+spaces_available = max_capacity - len(waiting)
+print(f"Spaces available: {spaces_available}")
+# Add two more if there's room
+if len(waiting) < max_capacity:
+    waiting.append("P3")
+if len(waiting) < max_capacity:
+    waiting.append("P4")
+print(f"Updated waiting list ({len(waiting)}/{max_capacity}):", waiting)
+print("="*40)
+
+
