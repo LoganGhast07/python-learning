@@ -56,3 +56,52 @@ try:
 except TypeError as e:
     print("Error:", e)
 print("="*40)
+
+
+
+
+# Without using loops:
+# 1. Create a list of the first 10 even numbers (use range and list)
+# 2. Create a checkerboard pattern: [0,1,0,1,0,1]
+# 3. Create a list that contains three empty lists
+# 4. Create a list from the string "1,2,3" that gives [1, 2, 3]
+# Hint for #4: Use split() then convert strings to integers manually
+even_numbers = list(range(0, 20, 2))
+checkerboard = [0, 1] * 3
+empty_lists = [[] for _ in range(3)]
+string_list = "1,2,3".split(',')
+int_list = [int(num) for num in string_list]
+print("Even Numbers:", even_numbers)
+print("Checkerboard:", checkerboard)
+print("Empty Lists:", empty_lists)
+print("Integer List from String:", int_list)
+print("="*40)
+
+
+
+# Given these lists:
+list1 = [10, 20, 30, 40, 50]
+list2 = []
+list3 = [100]
+# Write code to:
+# 1. Safely print the first element of each list (handle empty)
+# 2. Safely change the last element to 999 (if it exists)
+# 3. Swap first and last elements of list1
+# 4. Calculate the middle index of list1 and print that element
+for lst in [list1, list2, list3]:
+    if lst:
+        print("First element:", lst[0])
+    else:
+        print("List is empty.")
+for lst in [list1, list2, list3]:
+    if lst:
+        lst[-1] = 999
+for lst in [list1, list2, list3]:
+    print("List after changing last element if exists:", lst)
+if len(list1) >= 2:
+    list1[0], list1[-1] = list1[-1], list1[0]
+    print("List1 after swapping first and last:", list1)
+if list1:
+    middle_index = len(list1) // 2
+    print("Middle element of list1:", list1[middle_index])
+print("="*40)

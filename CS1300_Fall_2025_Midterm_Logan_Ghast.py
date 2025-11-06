@@ -8,23 +8,23 @@ phone = "555-123-4567"
 
 print("="*40)
 
-#Task 1.1: Extract and print first name only:
+#Task 1.1: Extract and print first name only
 first_name = full_name.split()[0]
 print("First Name:", first_name)
 
-#Task 1.2: Extract and print the last name only:
+#Task 1.2: Extract and print the last name only
 last_name = full_name.split()[-1]
 print("Last Name:", last_name)
 
-#Task 1.3: Create and print initials:
+#Task 1.3: Create and print initials
 initials = ''.join([name[0] for name in full_name.split()])
 print("Initials:", initials)
 
-#Task 1.4: Check if the email contains "university":
+#Task 1.4: Check if the email contains "university"
 contains_university = "university" in email
 print("Email contains 'university':", contains_university)
 
-#Task 1.5: Replace all dashes in phone with spaces and print:
+#Task 1.5: Replace all dashes in phone with spaces and print
 formatted_phone = phone.replace('-', ' ')
 print("Formatted Phone:", formatted_phone)
 print("="*40)
@@ -65,7 +65,6 @@ print("Sublist of first 3 numbers:", sublist_first_3)
 print("Total number of reviews:", len(numbers))
 print("First review number:", numbers[0])
 print("Last review number:", numbers[-1])
-
 
 
 
